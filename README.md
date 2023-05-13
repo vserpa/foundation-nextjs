@@ -10,6 +10,7 @@ https://github.com/vserpa/foundation-nextjs
 - [Mantine](https://mantine.dev/)
 - Firebase
 - UUID
+- [Google Fonts](https://fonts.google.com)
 
 ## Create a new project from scratch
 
