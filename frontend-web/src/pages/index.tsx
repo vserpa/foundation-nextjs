@@ -1,5 +1,9 @@
+import Page from "@/components/template/Page";
+
 export default function Home() {
   return (
-    <div>Sunspot NextJS</div>
+   <Page>
+      Sunspot
+   </Page>
   )
 }
