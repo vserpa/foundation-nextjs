@@ -1,13 +1,13 @@
-// import AuthForce from "../autenticacao/AuthForce"
+import ForcarAutenticacao from "../autenticacao/ForcarAutenticacao"
 
-interface PageProps {
-    external?: boolean
+interface PaginaProps {
+    externa?: boolean
     children: any
     className?: string
 }
 
-export default function Page(props: PageProps) {
-    function rendering() {
+export default function Pagina(props: PaginaProps) {
+    function renderizar() {
         return (
             <div className={`
                 flex flex-col min-h-screen
@@ -19,11 +19,9 @@ export default function Page(props: PageProps) {
         )
     }
 
-    // return props.external ? rendering() : (
-    //     <AuthForce>
-    //         {rendering()}
-    //     </AuthForce>
-    // )
-
-    return rendering()
+    return props.externa ? renderizar() : (
+        <ForcarAutenticacao>
+            {renderizar()}
+        </ForcarAutenticacao>
+    )
 }
